@@ -1,0 +1,22 @@
+  .nav-link {
+        position: relative;
+        padding-bottom: 5px;
+        color: #1F2937;
+    }
+
+    .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0%;
+     
+        background-color: #5F6FFF; /* the underline color */
+        transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+        width: 100%;
+    }
