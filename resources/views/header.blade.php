@@ -22,13 +22,13 @@
             <ul class="nav text-uppercase d-none d-lg-flex mx-auto gap-4"
                 style="font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 16px;">
                 <li class="nav-item">
-                    <a class="nav-link text-dark {{ request()->is('about') ? 'active' : '' }}" href="{{ url('/about') }}">Home</a>
+                    <a class="nav-link text-dark {{ request()->is('/') ? 'active' : '' }}" href="{{ url('/') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark {{ request()->is('services') ? 'active' : '' }}" href="{{ url('/services') }}">All Doctors</a>
+                    <a class="nav-link text-dark {{ request()->is('doctor') ? 'active' : '' }}" href="{{ url('/doctor') }}">All Doctors</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark {{ request()->is('blog') ? 'active' : '' }}" href="{{ url('/blog') }}">About</a>
+                    <a class="nav-link text-dark {{ request()->is('about') ? 'active' : '' }}" href="{{ url('/about') }}">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark {{ request()->is('contact') ? 'active' : '' }}" href="{{ url('/contact') }}">Contact</a>

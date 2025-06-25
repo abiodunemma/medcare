@@ -1,4 +1,4 @@
-<footer>
+<footer class="mt-5">
   <div class="container-fluid mt-5 py-4" style="background-color: #FFFFFF;">
     <div class="row text-start">
 
