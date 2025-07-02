@@ -38,10 +38,13 @@
             <!-- Contact Button (always visible on large) -->
             <div class="d-none d-lg-block">
                 <button type="button" class="btn text-white"
+                 onclick="window.location.href='{{ route('login') }}';"
                     style="background-color: #5F6FFF; border-radius: 24px; padding: 10px 20px;
                            font-size: 16px; font-weight: 300; font-family: 'Outfit', sans-serif;">
                     Create account
                 </button>
+             
+
             </div>
         </div>
 

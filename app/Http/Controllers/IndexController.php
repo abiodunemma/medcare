@@ -15,4 +15,14 @@ public function index()
     {
         return view('details');
     }
+
+    public function showLogin()
+    {
+        return view('auth.login'); // Blade file for login form
+    }
+
+    public function showRegister()
+    {
+        return view('auth.register'); // Blade file for register form
+    }
 }

@@ -13,6 +13,7 @@
     About <span class="fw-bold">Us</span>
   </h1>
 </div>
+
 <div class="container mt-0">
   <div class="row">
     <!-- Image Column -->
