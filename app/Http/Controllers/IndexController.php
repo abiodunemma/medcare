@@ -25,4 +25,9 @@ public function index()
     {
         return view('auth.register'); // Blade file for register form
     }
+
+    public function profile()
+    {
+        return view('profile'); // Blade file for user profile
+    }
 }

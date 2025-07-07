@@ -30,3 +30,6 @@ Route::get('/auth/login', [IndexController::class, 'showLogin'])->name('login');
 
 // For showing the registration form
 Route::get('/auth/register', [IndexController::class, 'showRegister'])->name('register');
+
+//profile
+Route::get('/profile', [IndexController::class, 'profile'])->name('profile');

@@ -25,7 +25,10 @@
         <label for="password" class="form-label">Password</label>
         <input type="password" class="form-control" id="password" placeholder="Password">
       </div>
-      <button type="submit" class="btn  w-100" style="background-color: #5F6FFF; color:#FFFFFF">Create account</button>
+      {{-- <button type="submit" class="btn  w-100" style="background-color: #5F6FFF; color:#FFFFFF">Create account</button> --}}
+<button type="button" class="btn w-100" style="background-color: #5F6FFF; color:#FFFFFF" onclick="window.location.href='/profile'">
+  Create account
+</button>
 
 
 
