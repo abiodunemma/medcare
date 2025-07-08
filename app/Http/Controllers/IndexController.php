@@ -30,4 +30,8 @@ public function index()
     {
         return view('profile'); // Blade file for user profile
     }
+    public function Appointments()
+    {
+        return view('Appointments'); // Blade file for user appointments
+    }
 }

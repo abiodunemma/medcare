@@ -12,7 +12,7 @@
     <img src="{{ asset('images/profile.png') }}" height="160" class="mb-3 me-4" style="object-fit: contain;">
 
     <!-- Right image: Upload -->
-    <img src="{{ asset('images/upload_area.png') }}" height="160" class="mb-3" style="object-fit: contain;">
+    <img src="{{ asset('images/upload_area.png') }}" height="160" class="mb-3 mr-2" style="object-fit: contain;">
   </div>
 
   <h3 class="" style="color:#1F2937">Edward Vincent </h3>
@@ -69,8 +69,11 @@
 </div>
 
  </main>
-
+<div class="container mt-5">
      @include('footer')
+</div>
+ </div>
+ 
  </div>
      
 @endsection

@@ -40,13 +40,13 @@
                 <div class="dropdown d-flex align-items-center">
   <img src="images/profile.png" alt="Profile" class="rounded-circle" width="40" height="40" style="object-fit: cover;">
   
-  <button class="btn dropdown-toggle ms-2 p-0 border-0 bg-transparent" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn dropdown-toggle ms-2 p-0 border-0 " type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="visually-hidden">Toggle Dropdown</span>
   </button>
 
-  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown" ">
     <li><a class="dropdown-item" href="/settings">Settings</a></li>
-      <li><a class="dropdown-item" href="/profile">My Appointments</a></li>
+      <li><a class="dropdown-item" href="/Appointments">My Appointments</a></li>
             <li><a class="dropdown-item" href="/profile">Share</a></li>
     <li><hr class="dropdown-divider"></li>
     <li><a class="dropdown-item" href="/logout">Logout</a></li>

@@ -33,3 +33,7 @@ Route::get('/auth/register', [IndexController::class, 'showRegister'])->name('re
 
 //profile
 Route::get('/profile', [IndexController::class, 'profile'])->name('profile');
+
+
+//profile
+Route::get('/Appointments', [IndexController::class, 'Appointments'])->name('Appointments');
