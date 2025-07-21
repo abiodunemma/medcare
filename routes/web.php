@@ -22,6 +22,9 @@ Route::get('/contact', function () {
     return view('contact'); // Contact page
 })->name('contact');
 
+Route::get('/admin/dashboard', function () {
+    return view('/admin/dashboard'); // Contact page
+})->name('/admin/dashboard');
 
 Route::get('/login', [IndexController::class, 'login']);
 
