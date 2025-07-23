@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
- <div class="d-flex flex-column min-vh-100">
+ <div class="d-flex flex-column min-vh-100"
+ style="background-color: #F6F8FF;"
+ >
  <main class="flex-grow-1">
 
 <!-- Now this content will be hidden until spinner finishes -->
@@ -9,15 +11,10 @@
 
  
 
- 
 
- 
-gfddbgteee
-
-
-
+ </main>
  </div>
  </main>
   @include('footer')
- </div>
+
  
