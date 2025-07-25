@@ -65,7 +65,9 @@
 <div class="container mt-4">
     <div class="row text-center">
 
-          <div class="col-6 col-sm-4 col-md-2 mb-4">
+          {{-- <div class="col-6 col-sm-4 col-md-2 mb-4"> --}}
+            <div class="col-6 col-sm-4 col-md-2 mb-4 wow animate__animated animate__fadeInLeft" data-wow-delay=".2s">
+
             <div class="d-flex flex-column align-items-center hover-effect">
                 <img src="{{ asset('images/Dermatologist.png') }}" alt="Doctor Image"
                      class="img-fluid mt-3" style="max-width: 90px; border-radius: 12px; width: 70px;">
@@ -76,7 +78,9 @@
             </div>
         </div>
 
-        <div class="col-6 col-sm-4 col-md-2 mb-4">
+        {{-- <div class="col-6 col-sm-4 col-md-2 mb-4"> --}}
+            <div class="col-6 col-sm-4 col-md-2 mb-4 wow animate__animated animate__fadeInLeft" data-wow-delay=".2s">
+
             <div class="d-flex flex-column align-items-center hover-effect">
                 <img src="{{ asset('images/Gastroenterologist.png') }}" alt="Doctor Image"
                      class="img-fluid mt-3" style="max-width: 90px; border-radius: 12px; width: 70px;">
@@ -89,7 +93,9 @@
 
       
 
-<div class="col-6 col-sm-4 col-md-2 mb-4">
+{{-- <div class="col-6 col-sm-4 col-md-2 mb-4"> --}}
+    <div class="col-6 col-sm-4 col-md-2 mb-4 wow animate__animated animate__fadeInLeft" data-wow-delay=".2s">
+
   <div class="d-flex flex-column align-items-center hover-effect">
     <img src="{{ asset('images/General_physician.png') }}" alt="Doctor Image"
          class="img-fluid mt-3" style="max-width: 90px; border-radius: 12px; width: 70px;">
@@ -101,7 +107,9 @@
 </div>
 
 
-        <div class="col-6 col-sm-4 col-md-2 mb-4">
+        {{-- <div class="col-6 col-sm-4 col-md-2 mb-4"> --}}
+            <div class="col-6 col-sm-4 col-md-2 mb-4 wow animate__animated animate__fadeInRight" data-wow-delay=".2s">
+
             <div class="d-flex flex-column align-items-center hover-effect">
                 <img src="{{ asset('images/Neurologist.png') }}" alt="Doctor Image"
                      class="img-fluid mt-3" style="max-width: 90px; border-radius: 12px; width: 70px;">
@@ -112,7 +120,9 @@
             </div>
         </div>
 
-        <div class="col-6 col-sm-4 col-md-2 mb-4">
+        {{-- <div class="col-6 col-sm-4 col-md-2 mb-4"> --}}
+            <div class="col-6 col-sm-4 col-md-2 mb-4 wow animate__animated animate__fadeInRight" data-wow-delay=".2s">
+
             <div class="d-flex flex-column align-items-center hover-effect">
                 <img src="{{ asset('images/Pediatricians.png') }}" alt="Doctor Image"
                      class="img-fluid mt-3" style="max-width: 90px; border-radius: 12px; width: 70px;">
@@ -123,7 +133,9 @@
             </div>
         </div>
 
-        <div class="col-6 col-sm-4 col-md-2 mb-4">
+        {{-- <div class="col-6 col-sm-4 col-md-2 mb-4"> --}}
+            <div class="col-6 col-sm-4 col-md-2 mb-4 wow animate__animated animate__fadeInRight" data-wow-delay=".2s">
+
             <div class="d-flex flex-column align-items-center hover-effect rounded-lg">
                 <img src="{{ asset('images/Gynecologist.png') }}" alt="Doctor Image"
                      class="img-fluid mt-3" style="max-width: 90px; border-radius: 12px; width: 70px;">

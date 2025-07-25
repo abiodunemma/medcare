@@ -17,6 +17,8 @@
         "vite": "^6.2.4"
     },
     "dependencies": {
-        "bootstrap": "^5.3.7"
+        "animate.css": "^4.1.1",
+        "bootstrap": "^5.3.7",
+        "wowjs": "^1.1.3"
     }
 }
