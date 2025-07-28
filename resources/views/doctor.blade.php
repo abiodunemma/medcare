@@ -8,18 +8,18 @@
 @include('header')
 
  
-<div class="container mt-2">
-  <div class="row justify-content-center">
+<div class="container mt-2 ">
+  <div class="row justify-content-center   " >
     <!-- Smaller Box -->
   <div class="col-md-4 p-0 border rounded overflow-hidden" style="background-color: #5F6FFF;">
-  <img src="{{ asset('images/new.png') }}" alt="Doctor Image" class="img-fluid w-100 d-block" style="margin-bottom: 0;">
+  <img src="{{ asset('images/new.png') }}" alt="Doctor Image" class="img-fluid w-100 d-block wow animate__animated animate__fadeInLeft" data-wow-delay=".1s" style="margin-bottom: 0;">
 </div>
 
     <!-- Small Space -->
     <div class="col-md-1 d-none d-md-block"></div>
 
     <!-- Bigger Box -->
-    <div class="col-md-7 bg-light p-4 border rounded">
+    <div class="col-md-7 bg-light p-4 border rounded wow animate__animated animate__fadeInRight" data-wow-delay=".1s" >
     <h2 class="mb-2 d-flex align-items-center gap-2">
     Dr. Richard James
     <span class="badge  d-flex align-items-center" style="padding: 4px 10px;">
@@ -51,12 +51,12 @@ treatment strategies.
 </div>
 
 <div class="container  mt-4" >
- <h4 class="text-center" style="font-family: 'Outfit', sans-serif; font-weight: 200; color: #4B5563; "> Booking slots </h4>
+ <h4 class="text-center wow animate__animated animate__fadeInDown" data-wow-delay=".2s" style="animation-delay: 1.2s;" style="font-family: 'Outfit', sans-serif; font-weight: 200; color: #4B5563; "> Booking slots </h4>
 </div>
 
 <!-- Booking Slots Row -->
 
-<div class="container mt-4">
+<div class="container mt-4 wow animate__animated animate__fadeInDown" data-wow-delay=".2s" style="animation-delay: 1.2s;">
   <div class="row">
     <!-- Full width row -->
     <div class="col-12">
@@ -107,7 +107,7 @@ treatment strategies.
   </div>
 </div>
 <!-- Booking Slots time -->  
-<div class="container mt-4">
+<div class="container mt-4 wow animate__animated animate__fadeInUp" data-wow-delay=".2s" style="animation-delay: 1.2s;"">
   <div class="row">
     <div class="col-12">
       <!-- Align to the left but start from center-left area -->
@@ -146,7 +146,7 @@ treatment strategies.
   </div>
 </div>
 
-<div class="container mt-4 mb-5">
+<div class="container mt-4 mb-5 wow animate__animated animate__fadeInUp" data-wow-delay=".2s" style="animation-delay: 1.2s;">
   <div class="d-flex justify-content-start">
     <div style="margin-left: 40%;">
       <button class="btn btn-primary"
@@ -161,22 +161,23 @@ treatment strategies.
 <div class="container ">
     <div class="row">
         <div class="col-md-12 text-center">
-          <h2 class="mb-4 typing-text" style="font-family: 'Outfit', sans-serif; font-weight: 300;">
+          <h2 class="mb-4 wow animate__animated animate__bounceIn" data-wow-delay=".1s" style="font-family: 'Outfit', sans-serif; font-weight: 300;">
   Related Doctors
 </h2>
 
-            <p class="mb-1 typing-text" style="font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 16px;">
+            <p class="mb-1 wow animate__animated animate__fadeInLeft" data-wow-delay=".1s" style="font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 16px;">
                Simply browse through our extensive list of trusted doctors.
             </p>
          
         </div>
     </div>
  
-    <div class="container mt-4">
+    <div class="container mt-4 ">
             <a href="{{ url('/details') }}" class="text-decoration-none">
     <div class="row">
+
         <!-- Card 1 -->
-       <div class="col-md-3 " style="margin-bottom: 60%">
+       <div class="col-md-3 wow animate__animated animate__fadeInLeft " style="margin-bottom: 60%">
     <div class="card  shadow-md hover-effect" style="height: 320px; border-radius: 12px; overflow: hidden;">
         
         <!-- Top image section with background color -->
@@ -211,7 +212,7 @@ treatment strategies.
         </div>
 
         <!-- Card 2 -->
-        <div class="col-md-3 mb-4">
+        <div class="col-md-3 mb-4 wow animate__animated animate__fadeInLeft" data-wow-delay=".1s">
             <div class="card  shadow-md hover-effect" style="height: 320px; border-radius: 12px; overflow: hidden;">
         
         <!-- Top image section with background color -->
@@ -243,7 +244,7 @@ treatment strategies.
         </div>
 
         <!-- Card 3 -->
-        <div class="col-md-3 mb-4">
+        <div class="col-md-3 mb-4 wow animate__animated animate__fadeInRight" data-wow-delay=".1s">
              <div class="card  shadow-md hover-effect" style="height: 320px; border-radius: 12px; overflow: hidden;">
         
         <!-- Top image section with background color -->
@@ -275,7 +276,9 @@ treatment strategies.
         </div>
 
         <!-- Card 4 -->
-        <div class="col-md-3 mb-4">
+        <div class="col-md-3 mb-4 wow animate__animated animate__zoomIn" 
+     data-wow-delay=".3s" 
+     data-wow-duration="1.2s">
             <div class="card  shadow-md hover-effect" style="height: 320px; border-radius: 12px; overflow: hidden;">
         
         <!-- Top image section with background color -->

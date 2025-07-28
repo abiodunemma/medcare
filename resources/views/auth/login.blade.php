@@ -7,7 +7,7 @@
 <!-- Now this content will be hidden until spinner finishes -->
 @include('header')
 
- <div class="container d-flex justify-content-center align-items-center min-vh-300">
+ <div class="container d-flex justify-content-center align-items-center min-vh-300 wow animate__animated animate__rubberBand" data-wow-delay=".2s">
   <div class="border shadow-lg p-5 rounded" style="width: 100%; max-width: 400px;">
     <h4 class=" ">Create Account</h4>
     <p class="mb-4"> Please sign up to book appointment </p>

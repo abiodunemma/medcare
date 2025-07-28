@@ -7,9 +7,9 @@
 <!-- Now this content will be hidden until spinner finishes -->
 @include('header')
 
- <div class="container">
-  <div class="text-center mt-4 mb-5">
-  <h1 style="color: #4B5563; font-family: 'Outfit', sans-serif; font-weight: 50;">
+ <div class="container  wow animate__animated animate__rubberBand" data-wow-delay=".2s">
+  <div class="text-center mt-4 mb-5  wow animate__animated animate__fadeInLeftBig" data-wow-delay=".2s">
+  <h1 style="color: #4B5563; font-family: 'Outfit', sans-serif; font-weight: 50; ">
     About <span class="fw-bold">Us</span>
   </h1>
 </div>

@@ -9,16 +9,16 @@
     <div class="row m-0 p-0" style="min-height: 400px;">
         <!-- Left Section -->
         <div class="col-md-6 d-flex sm:text- justify-content-center flex-column justify-content-center ps-5 pe-5">
-<p class="mt-3 h1 text-white fade-up" style="font-weight: 300; font-family: 'Outfit', sans-serif; animation-delay: 0.3s;">
+<p class="mt-3 h1 text-white  wow animate__animated animate__fadeInDown" data-wow-delay=".2s"data-wow-delay=".2s" style="font-weight: 300; font-family: 'Outfit', sans-serif; animation-delay: 0.3s;">
   Book Appointment
 </p>
 
-<p class="mt-1 h1 text-white fade-up" style="font-weight: 300; font-family: 'Outfit', sans-serif; animation-delay: 0.6s;">
+<p class="mt-1 h1 text-white  wow animate__animated animate__fadeInDown" data-wow-delay=".2s" style="font-weight: 300; font-family: 'Outfit', sans-serif; animation-delay: 0.6s;">
   With Trusted Doctors
 </p>
 
 
-            <div class="d-flex align-items-center mt-3">
+            <div class="d-flex align-items-center mt- wow animate__animated animate__fadeInDown" data-wow-delay=".2s" style="animation-delay: 0.9s;">
                 <img src="{{ asset('images/group.png') }}" alt="Doctor Image"
                      class="img-fluid me-3" style="max-width: 90px; height: auto; border-radius: 12px;">
                 <span class="text-white" style="font-size: 1rem;">
@@ -27,7 +27,7 @@
                 </span>
             </div>
 
-            <div class="d-flex mt-4">
+            <div class="d-flex mt-4  wow animate__animated animate__fadeInDown" data-wow-delay=".2s" style="animation-delay: 1.2s;">
                 <button type="button" class="btn border-0"
                     style="background-color: #FFFFFF; border-radius: 24px;
                     padding: 10px 20px; font-size: 16px; font-weight: 300;
@@ -39,9 +39,9 @@
         </div>
 
         <!-- Right Section -->
-        <div class="col-md-6 p-0 d-flex justify-content-center align-items-center">
+        <div class="col-md-6 p-0 d-flex justify-content-center align-items-center   wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
             <img src="{{ asset('images/doc.png') }}" alt="Doctor Image"
-                 class="img-fluid w-100 h-100" style="object-fit: cover; border-top-right-radius: 12px; border-bottom-right-radius: 12px;">
+                 class="img-fluid w-100 h-100 " style="object-fit: cover; border-top-right-radius: 12px; border-bottom-right-radius: 12px; ">
         </div>
     </div>
 </div>
@@ -49,13 +49,13 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-12 text-center">
-            <h2 class="mb-4" style="font-family: 'Outfit', sans-serif; font-weight: 300;">
+            <h2 class="mb-4 wow animate__animated animate__fadeInDown" data-wow-delay=".2s" style="font-family: 'Outfit', sans-serif; font-weight: 300;">
                Find by Speciality 
             </h2>
-          <p class="mb-1" style="font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 16px;">
+          <p class="mb-1  wow animate__animated animate__fadeInDown" data-wow-delay=".1s" style="font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 16px;">
     Simply browse through our extensive list of trusted doctors, schedule
 </p>
-<p class="mb-0" style="font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 16px;">
+<p class="mb-0 wow animate__animated animate__fadeInDown" data-wow-delay=".1s" style="font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 16px;">
     your appointment hassle-free.
 </p>
 
@@ -152,11 +152,11 @@
 <div class="container mt-3">
     <div class="row">
         <div class="col-md-12 text-center">
-          <h2 class="mb-4 typing-text" style="font-family: 'Outfit', sans-serif; font-weight: 300;">
-  Top Doctors to Book
+         
+<h2 class="mb-4 wow animate__animated animate__fadeInUp" data-wow-delay=".2s" style="font-family: 'Outfit', sans-serif; font-weight: 300;">
+   Top Doctors to Book
 </h2>
-
-            <p class="mb-1 typing-text" style="font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 16px;">
+            <p class="mb-1  wow animate__animated animate__fadeInUp " data-wow-delay=".2s" style="font-family: 'Poppins', sans-serif; font-weight: 300; font-size: 16px;">
                Simply browse through our extensive list of trusted doctors.
             </p>
          
@@ -442,16 +442,16 @@
     <div class="row m-0 p-0" style="min-height: 400px;">
         <!-- Left Section -->
         <div class="col-md-6 d-flex sm:text- justify-content-center flex-column justify-content-center ps-5 pe-5">
-            <p class="mt-3 h1 text-white" style="font-weight: 300; font-family: 'Outfit', sans-serif;">
+            <p class="mt-3 h1 text-white  wow animate__animated animate__fadeInUp" data-wow-delay=".2s" style="font-weight: 300; font-family: 'Outfit', sans-serif;">
                 Book Appointment
             </p>
-            <p class="mt-1 h1 text-white" style="font-weight: 300; font-family: 'Outfit', sans-serif;">
+            <p class="mt-1 h1 text-white  wow animate__animated animate__fadeInUp" data-wow-delay=".2s" style="font-weight: 300; font-family: 'Outfit', sans-serif;">
               Book Appointment 
 With 100+ Trusted Doctors
             </p>
 
 
-            <div class="d-flex mt-4">
+            <div class="d-flex mt-4  wow animate__animated animate__fadeInDown" data-wow-delay=".2s">
                 <button type="button" class="btn border-0"
                     style="background-color: #FFFFFF; border-radius: 24px;
                     padding: 10px 20px; font-size: 16px; font-weight: 300;
