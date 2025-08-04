@@ -28,7 +28,13 @@
         <label for="password" class="form-label">Password</label>
         <input type="password" class="form-control" id="password" placeholder="Password">
       </div>
-      <button type="submit" class="btn  w-100" style="background-color: #5F6FFF; color:#FFFFFF">Create account</button>
+   <button type="button" id="submitBtn" class="btn w-100"
+    style="background-color: #5F6FFF; color:#FFFFFF">
+    <span class="button-text">Create account</span>
+    <span class="spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true"></span>
+</button>
+
+
 <p class="fw-light mt-1">
   Already have an account?
   <a href="/auth/register" style="color: #5F6FFF; text-decoration: none;">
@@ -45,3 +51,33 @@
    @include('footer')
  </div>
  
+
+<script>
+    document.getElementById('submitBtn').addEventListener('click', function () {
+        const btn = this;
+        const text = btn.querySelector('.button-text');
+        const spinner = btn.querySelector('.spinner-border');
+
+        // Show spinner and change text
+        btn.disabled = true;
+        spinner.classList.remove('d-none');
+        text.textContent = 'Loading...';
+
+        // Simulate a 3-second delay
+        setTimeout(() => {
+   // redirect
+            text.textContent = 'Redirecting...';
+            
+            // Simulate redirect (optional)
+             window.location.href = '/auth/register';
+
+            //  reset UI after 3 seconds for demo
+            setTimeout(() => {
+                btn.disabled = false;
+                spinner.classList.add('d-none');
+                text.textContent = 'Create account';
+            }, 2000); // Reset after 2 seconds more
+        }, 3000);
+    });
+</script>
+

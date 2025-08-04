@@ -37,13 +37,14 @@
 
             <!-- Contact Button (always visible on large) -->
             <div class="d-none d-lg-block">
-                <button type="button" class="btn text-white"
-                 onclick="window.location.href='{{ route('login') }}';"
-                    style="background-color: #5F6FFF; border-radius: 24px; padding: 10px 20px;
-                           font-size: 16px; font-weight: 300; font-family: 'Outfit', sans-serif;">
-                    Create account
-                </button>
-             
+                <button type="button" class="btn text-white d-flex align-items-center justify-content-center"
+    style="background-color: #5F6FFF; border-radius: 24px; padding: 10px 20px;
+           font-size: 16px; font-weight: 300; font-family: 'Outfit', sans-serif;"
+    onclick="handleRedirect(this, '{{ route('login') }}')">
+    <span class="button-text">Create account</span>
+    <span class="spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true"></span>
+</button>
+
 
             </div>
         </div>
@@ -96,3 +97,23 @@
 </div>
 
 <!-- Header End -->
+
+
+<script>
+    function handleRedirect(button, url) {
+        const text = button.querySelector('.button-text');
+        const spinner = button.querySelector('.spinner-border');
+
+        // Show spinner
+        spinner.classList.remove('d-none');
+        text.textContent = "Loading...";
+
+        // Disable the button
+        button.disabled = true;
+
+        // Delay for 3 seconds, then redirect
+        setTimeout(() => {
+            window.location.href = url;
+        }, 3000);
+    }
+</script>

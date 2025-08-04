@@ -1,83 +1,47 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ config('app.name', 'Prescripto') }}</title>
-
-    <!-- Fonts & Icons -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-
-    <!-- Bootstrap 5 only -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS & Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <style>
-        /* Hide page content until spinner fades */
-        #page-content {
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-
-        #spinner {
-            transition: opacity 0.5s ease;
-            z-index: 9999;
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F6F8FF;
         }
     </style>
+
+    @stack('styles')
 </head>
-{{-- <body> --}}
-    <body style="overflow-x: hidden;">
+<body>
+    <!-- Wrapper -->
+    <div class="d-flex flex-column min-vh-100">
 
-<!-- Spinner (fullscreen) -->
-<div id="spinner" class="position-fixed top-0 start-0 w-100 vh-100 bg-white d-flex align-items-center justify-content-center">
-    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-        <span class="visually-hidden">Loading...</span>
+        <!-- Header -->
+        @include('admin.header')
+
+        <!-- Content Area with Sidebar -->
+        <div class="d-flex flex-grow-1" style="min-height: calc(100vh - 60px);">
+            <!-- Sidebar -->
+            @include('admin.sidebar')
+
+            <!-- Main Content -->
+            <main class="flex-grow-1 p-4">
+                @yield('content')
+            </main>
+        </div>
+
+        <!-- Footer -->
+        @include('admin.footer')
     </div>
-</div>
 
-<!-- Hidden content (revealed after spinner) -->
-<div id="page-content">
-    @yield('content')
-</div>
-
-<script>
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            const spinner = document.getElementById('spinner');
-            const page = document.getElementById('page-content');
-
-            if (spinner && page) {
-                spinner.style.opacity = '0';
-                spinner.style.pointerEvents = 'none';
-
-                setTimeout(() => {
-                    spinner.style.display = 'none';
-                    page.style.opacity = '1';
-                }, 500); // Wait for fade out
-            }
-        }, 2000); // Show spinner for 3s
-    });
-</script>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
-<!-- Add Bootstrap JS (usually before </body>) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    @stack('scripts')
 </body>
 </html>
